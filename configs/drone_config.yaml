@@ -1,0 +1,27 @@
+simulation:
+  physics_hz: 240
+  control_hz: 48
+  gui: false
+  duration_seconds: 12.0
+
+world:
+  x_bounds: [-3.0, 3.0]
+  y_bounds: [-3.0, 3.0]
+  z_bounds: [0.25, 2.8]
+  initial_position: [0.0, 0.0, 0.75]
+  obstacle_count: 4
+  obstacle_radius_range: [0.22, 0.34]
+  obstacle_spawn_attempts: 100
+  goal_tolerance: 0.30
+  max_command_speed: 0.45
+
+collection:
+  default_episodes: 40
+  max_steps_per_episode: 576
+  waypoint_speed: 0.45
+  obstacle_influence_distance: 1.15
+  repulsion_gain: 0.75
+  exploration_sigma: 0.10
+  random_action_probability: 0.08
+  random_action_scale: 0.55
+  seed: 7

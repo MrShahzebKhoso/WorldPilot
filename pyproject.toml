@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "worldpilot"
+version = "0.1.0"
+description = "Interactive Drone World Model"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.5,<2.8",
+    "pybullet>=3.2.6",
+    "gymnasium>=0.29",
+    "PyYAML>=6.0",
+]
+
+[tool.setuptools]
+packages = ["worldpilot"]

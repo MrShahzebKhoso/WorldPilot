@@ -1,0 +1,23 @@
+{
+  "checkpoint": "checkpoints/worldpilot_maze_mlp.pt",
+  "dataset": "datasets/worldpilot_maze.npz",
+  "success": true,
+  "collision": false,
+  "out_of_bounds": false,
+  "steps": 1446,
+  "waypoints": 11,
+  "prediction_type": "one-step-ahead, conditioned on actual state and commanded action",
+  "position_prediction_rmse_m": 0.00032079595535482094,
+  "position_prediction_mean_error_m": 0.0002847471469476219,
+  "final_position": [
+    1.001979947090149,
+    1.7254873514175415,
+    1.2032523155212402
+  ],
+  "goal_position": [
+    1.0,
+    2.0,
+    1.2000000476837158
+  ],
+  "video": "outputs/worldpilot_indoor_chase_v5.mp4"
+}

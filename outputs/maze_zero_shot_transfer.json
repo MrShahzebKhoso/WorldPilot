@@ -1,0 +1,35 @@
+{
+  "dataset": "datasets/worldpilot_maze.npz",
+  "checkpoint": "checkpoints/worldpilot_mlp.pt",
+  "transitions": 28847,
+  "episodes": 20,
+  "zero_shot_one_step_model": {
+    "state_rmse": 0.016539065167307854,
+    "position_rmse_m": 0.0015472826780751348,
+    "velocity_rmse_mps": 0.022432247176766396,
+    "attitude_rmse_rad": 0.023538239300251007
+  },
+  "one_step_persistence_baseline": {
+    "state_rmse": 0.01366577297449112,
+    "position_rmse_m": 0.003732232842594385,
+    "velocity_rmse_mps": 0.011028219945728779,
+    "attitude_rmse_rad": 0.007870052941143513
+  },
+  "multi_step_position_rollout": {
+    "5": {
+      "model_position_rmse_m": 0.004774946719408035,
+      "persistence_position_rmse_m": 0.012365802191197872,
+      "samples": 28805
+    },
+    "10": {
+      "model_position_rmse_m": 0.009139188565313816,
+      "persistence_position_rmse_m": 0.02309684082865715,
+      "samples": 28770
+    },
+    "20": {
+      "model_position_rmse_m": 0.030216727405786514,
+      "persistence_position_rmse_m": 0.044385604560375214,
+      "samples": 28640
+    }
+  }
+}
